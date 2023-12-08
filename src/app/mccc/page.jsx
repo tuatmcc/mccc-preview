@@ -1,8 +1,8 @@
 'use client';
 
+import { OrbitControls, Stats } from '@react-three/drei';
 import { Canvas, useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { Stats, OrbitControls } from '@react-three/drei';
 import { Lights } from './_components/Lights';
 
 const Model = () => {
@@ -11,8 +11,6 @@ const Model = () => {
 };
 
 export default function Page() {
-
-
   return (
     <div className="h-screen">
       <Canvas camera={{ fov: 40 }}>
