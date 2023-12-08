@@ -1,6 +1,6 @@
 # mccc-preview
 
-A Website for previewing [mcccc 3D model](https://github.com/tuatmcc/mccc)
+A Website for previewing [mccc 3D model](https://github.com/tuatmcc/mccc)
 
 - **Cloudflare Pages** (@cloudflare/next-on-pages): Hosting Service
 - **bun**: JavaScript runtime & package manager (faster than Node.js)
@@ -33,6 +33,8 @@ bun fmt # run format and code fix with @biomejs/biome
 
 All deployment configuration is set in the Cloudflare dashboard.
 Cloudflare will automatically detect bun.
+
+As a `prebuild` hook, it clones the model's repository and copy `mccc.gltf` into `public/modles/`.
 
 - Build Settings
   - Build command: `bunx @cloudflare/next-on-pages@1`
