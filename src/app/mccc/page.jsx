@@ -15,7 +15,7 @@ export default function Page() {
 
   return (
     <div className="h-screen">
-      <Canvas>
+      <Canvas camera={{ fov: 40 }}>
         <Lights />
         <pointLight position={[0, 5, 10]} intensity={5} />
         <Model />
