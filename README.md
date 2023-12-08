@@ -9,7 +9,7 @@ A Website for previewing [mcccc 3D model](https://github.com/tuatmcc/mccc)
 
 ## Why is this project made of JavaScript?
 
-While Three.js lacks official TypeScript support, the community-maintained "@types/three" library does provide excellent type definitions. However, its coverage isn't exhaustive, and many existing examples use JavaScript.
+While Three.js lacks official TypeScript support, the community-maintained `@types/three` library does provide excellent type definitions. However, its coverage isn't exhaustive, and many existing examples use JavaScript.
 
 ## Usage
 
