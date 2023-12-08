@@ -17,18 +17,18 @@ Also, many examples of them are made of JavaScript, so it is easier to integrate
 
 ## Usage
 
-```
+```sh
 bun i -y # install dependencies with yarn style lock file
 ```
 
-```
+```sh
 bun dev # create development server on localhost:3000
 ```
 
-```
+```sh
 bun lint # run code style check using @biomejs/biome
 ```
 
-```
+```sh
 bun fmt # run format and code fix with @biomejs/biome
 ```
