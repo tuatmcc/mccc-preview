@@ -18,7 +18,7 @@ Also, many examples of them are made of JavaScript, so it is easier to integrate
 ## Usage
 
 ```sh
-bun i -y # install dependencies with yarn style lock file
+bun i -y # install dependencies with yarn-style lockfile
 ```
 
 ```sh
