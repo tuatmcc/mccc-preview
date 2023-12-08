@@ -7,7 +7,7 @@ A Website for previewing [mccc 3D model](https://github.com/tuatmcc/mccc)
 - **Next.js**: React Framework
 - **React Three Fiber**: `Three.js` wrapper for React
 
-## Why is this project made of JavaScript?
+## Why is this project written in JavaScript?
 
 While Three.js lacks official TypeScript support, the community-maintained `@types/three` library does provide excellent type definitions. However, its coverage isn't exhaustive, and many existing examples use JavaScript.
 
