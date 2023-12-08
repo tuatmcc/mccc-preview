@@ -23,7 +23,7 @@ bun i -y # install dependencies with yarn style lock file
 
 ```
 bun dev # create development server on localhost:3000
-``
+```
 
 ```
 bun lint # run code style check using @biomejs/biome
