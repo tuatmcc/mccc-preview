@@ -10,7 +10,7 @@ export const Lights = () => {
 
   useControls('Ambient Light', {
     visible: {
-      value: false,
+      value: true,
       onChange: (v) => {
         ambientRef.current.visible = v;
       },
