@@ -7,7 +7,7 @@ import { simpleGit } from 'simple-git';
 const modelRepo = 'https://github.com/tuatmcc/mccc.git';
 const cloneDir = 'tmp';
 const targetPublicModelDir = 'models';
-const targetModelListFile = 'src/generated/mccc.js';
+const targetModelListFile = 'src/generated/mccc.mjs';
 
 const git = simpleGit({
   baseDir: process.cwd(),
