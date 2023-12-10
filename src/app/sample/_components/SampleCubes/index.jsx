@@ -3,14 +3,16 @@
 import { Canvas, useFrame } from '@react-three/fiber';
 import React, { useRef, useState } from 'react';
 
-function Box(props) {
+const Box = (props) => {
   // This reference will give us direct access to the mesh
   const meshRef = useRef();
   // Set up state for the hovered and active state
   const [hovered, setHover] = useState(false);
   const [active, setActive] = useState(false);
   // Subscribe this component to the render-loop, rotate the mesh every frame
-  useFrame((_state, delta) => { meshRef.current.rotation.x += delta });
+  useFrame((_state, delta) => {
+    meshRef.current.rotation.x += delta;
+  });
   // Return view, these are regular three.js elements expressed in JSX
   return (
     <mesh
@@ -25,9 +27,9 @@ function Box(props) {
       <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
     </mesh>
   );
-}
+};
 
-export default function Page() {
+export const SampleCubes = () => {
   return (
     <div className="h-screen">
       <Canvas>
@@ -38,4 +40,4 @@ export default function Page() {
       </Canvas>
     </div>
   );
-}
+};

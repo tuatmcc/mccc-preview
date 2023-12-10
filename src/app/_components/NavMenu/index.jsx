@@ -1,6 +1,6 @@
 import NextLink from 'next/link';
 
-const routes = ['/', '/example', '/mccc'];
+const routes = ['/', '/sample', '/mccc'];
 
 export const NavMenu = () => {
   return (
