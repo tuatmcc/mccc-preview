@@ -12,7 +12,6 @@
     "fmt:force": "biome check . --apply-unsafe",
     "fetch-models": "bun run ./src/scripts/fetch_model.mjs",
     "prebuild": "bun fetch-models",
-    "pre@cloudflare/next-on-pages@1": "bun fetch-models"
   },
   "dependencies": {
     "@biomejs/biome": "^1.4.1",
