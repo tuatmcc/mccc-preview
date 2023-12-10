@@ -38,3 +38,7 @@ next-env.d.ts
 # models
 /public/models/**
 !/public/models/.gitkeep
+
+# generated
+/src/generated/**
+!/src/generated/.gitkeep

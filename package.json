@@ -10,15 +10,18 @@
     "lint": "biome check .",
     "fmt": "biome check . --apply",
     "fmt:force": "biome check . --apply-unsafe",
-    "fetch-model": "node ./scripts/fetch_model.mjs",
+    "fetch-model": "bun run ./src/scripts/fetch_model.mjs",
     "prebuild": "bun fetch-model"
   },
   "dependencies": {
     "@biomejs/biome": "^1.4.1",
     "@react-three/drei": "^9.90.1",
     "@react-three/fiber": "^8.15.12",
+    "@react-three/postprocessing": "^2.15.11",
+    "glob": "^10.3.10",
     "leva": "^0.9.35",
     "next": "14.0.4",
+    "postprocessing": "^6.33.4",
     "react": "^18",
     "react-dom": "^18",
     "simple-git": "^3.21.0",
@@ -26,6 +29,7 @@
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.8.1",
+    "@svgr/webpack": "^8.1.0",
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0"

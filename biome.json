@@ -23,6 +23,11 @@
   },
   "files": {
     "include": ["src/**/*.tsx?", "src/**/*.jsx?"],
-    "ignore": ["node_modules/**/*", ".next/**/*", "out/**/*"]
+    "ignore": [
+      "node_modules/**/*",
+      ".next/**/*",
+      "out/**/*",
+      "**/generated/**/*"
+    ]
   }
 }
