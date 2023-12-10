@@ -11,7 +11,7 @@
     "fmt": "biome check . --apply",
     "fmt:force": "biome check . --apply-unsafe",
     "fetch-models": "bun run ./src/scripts/fetch_model.mjs",
-    "prebuild": "bun fetch-models",
+    "prebuild": "bun fetch-models"
   },
   "dependencies": {
     "@biomejs/biome": "^1.4.1",
