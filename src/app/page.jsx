@@ -10,7 +10,7 @@ export default function Home() {
       </div>
       <p className="p-2 mb-3">
         <a
-          href="www.tuatmcc.com"
+          href="https://x.com/tuatmcc"
           target="_blank"
           rel="noreferrer"
           className="text-blue-500 hover:underline hover:text-blue-700 font-bold"
