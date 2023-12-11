@@ -32,7 +32,7 @@ However, its coverage isn't exhaustive, and many existing examples and documents
 All deployment configuration is set in the Cloudflare dashboard.
 Cloudflare will automatically detect bun.
 
-As a `prebuild` hook, it clones the model's repository and copy `mccc.gltf` into `public/modles/`.
+As a `prebuild` hook, it clones the model's repository and copy `*.gltf` into `public/modles/`.
 
 - Build Settings
   - Build command: `pnpm prebuild && pnpx @cloudflare/next-on-pages@1`
