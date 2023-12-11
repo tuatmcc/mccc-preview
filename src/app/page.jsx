@@ -20,6 +20,17 @@ export default function Home() {
         のオリジナルモデル(開発中)をプレビューするためのサイトです。
       </p>
       <NavMenu />
+      <p className="p-2 my-3 text-sm">
+        <a 
+          href="https://github.com/tuatmcc/mccc"
+          target="_blank"
+          rel="noreferrer"
+          className="text-blue-500 hover:underline"
+        >
+          開発中のモデル
+        </a>
+        が更新されると自動でこのサイトも更新されます。
+      </p>
       <p className="p-2 text-gray-600 text-center mt-3">
         {'\u00A9'} 2021 東京農工大学マイクロコンピュータークラブ
       </p>
