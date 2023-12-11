@@ -1,6 +1,6 @@
 'use client';
 
-import { modelList } from '../../../../generated/mccc';
+import { modelList } from '@/generated/mccc';
 import { OrbitControls, Stats } from '@react-three/drei';
 import { Canvas, useLoader } from '@react-three/fiber';
 import { useRef } from 'react';

@@ -22,12 +22,23 @@
     }
   },
   "files": {
-    "include": ["src/**/*.tsx?", "src/**/*.jsx?"],
+    "include": [
+      "src/**/*.jsx",
+      "src/**/*.js",
+      "scripts/**/*.js",
+      "scripts/**/*.jsx"
+    ],
     "ignore": [
       "node_modules/**/*",
       ".next/**/*",
+      ".vercel/**/*",
       "out/**/*",
       "**/generated/**/*"
     ]
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
   }
 }

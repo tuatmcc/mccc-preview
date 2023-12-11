@@ -1,4 +1,4 @@
-import { NavMenu } from './_components/NavMenu';
+import { NavMenu } from '@/app/_components/NavMenu';
 
 import WordmarkLogo from '/public/wordmark-logo.svg';
 

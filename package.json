@@ -2,7 +2,7 @@
   "name": "mccc-preview",
   "version": "0.1.0",
   "private": true,
-  "type": "module", 
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,7 +12,8 @@
     "fmt": "biome check . --apply",
     "fmt:force": "biome check . --apply-unsafe",
     "fetch-models": "bun run ./src/scripts/fetch_model.mjs",
-    "prebuild": "bun fetch-models"
+    "prebuild": "bun fetch-models",
+    "build:cloudflare": "bunx @cloudflare/next-on-pages"
   },
   "dependencies": {
     "@biomejs/biome": "^1.4.1",
