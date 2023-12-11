@@ -11,7 +11,7 @@
     "lint": "biome check .",
     "fmt": "biome check . --apply",
     "fmt:force": "biome check . --apply-unsafe",
-    "fetch-model": "bun run ./src/scripts/fetch_model.mjs",
+    "fetch-model": "node run ./src/scripts/fetch_model.mjs",
     "prebuild": "bun fetch-model",
     "build:cloudflare": "bunx @cloudflare/next-on-pages@1"
   },
