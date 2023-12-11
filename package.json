@@ -11,9 +11,9 @@
     "lint": "biome check .",
     "fmt": "biome check . --apply",
     "fmt:force": "biome check . --apply-unsafe",
-    "fetch-model": "node ./src/scripts/fetch_model.mjs",
-    "prebuild": "npx run fetch-model",
-    "build:cloudflare": "npx run fetch-model && npx @cloudflare/next-on-pages"
+    "fetch-model": "bun run ./src/scripts/fetch_model.mjs",
+    "prebuild": "bun fetch-model",
+    "build:cloudflare": "bunx @cloudflare/next-on-pages@1"
   },
   "dependencies": {
     "@biomejs/biome": "^1.4.1",
