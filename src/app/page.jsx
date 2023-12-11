@@ -32,7 +32,7 @@ export default function Home() {
         が更新されると自動でこのサイトも更新されます。
       </p>
       <p className="p-2 text-gray-600 text-center mt-3">
-        {'\u00A9'} 2021 東京農工大学マイクロコンピュータークラブ
+        {'\u00A9'} 2023 東京農工大学マイクロコンピュータークラブ
       </p>
     </main>
   );
