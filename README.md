@@ -15,7 +15,7 @@ However, its coverage isn't exhaustive, and many existing examples and documents
 ## Usage
 
 ```sh
-bun i -y # install dependencies with yarn-style lockfile
+bun i # install dependencies
 ```
 
 ```sh
