@@ -30,8 +30,17 @@ export default function Home() {
           開発中のモデル
         </a>
         が更新されると自動でこのサイトも更新されます。
+        ソースコード →
+        <a 
+          href="https://github.com/tuatmcc/mccc-preview"
+          target="_blank"
+          rel="noreferrer"
+          className="text-blue-500 hover:underline"
+        >
+          GitHub
+        </a>
       </p>
-      <p className="p-2 text-gray-600 text-center mt-3">
+      <p className="p-2 text-gray-600 text-sm text-center mt-3">
         {'\u00A9'} 2023 東京農工大学マイクロコンピュータークラブ
       </p>
     </main>
