@@ -31,7 +31,7 @@ const Model = ({ path }) => {
 
 export const PreviewScene = () => {
   return (
-    <div className="h-screen">
+    <div className="h-screen-s">
       <Canvas camera={{ fov: 40 }}>
         {modelList.map((path, _index) => {
           return <Model path={path} />;

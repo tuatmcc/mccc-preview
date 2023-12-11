@@ -1,17 +1,29 @@
 import NextLink from 'next/link';
 
-const routes = ['/sample', '/mccc'];
+const routes = [
+  {
+    name: 'React Three Fiber Sample',
+    path: '/sample',
+  },
+  {
+    name: 'MCCC',
+    path: '/mccc',
+  },
+];
 
 export const NavMenu = () => {
   return (
     <ul className="flex flex-col gap-2 p-2">
-      {routes.map((route) => (
+      {routes.map(({ name, path }) => (
         <li
-          key={route}
-          className="p-2 border-2 border-gray-300 rounded-lg shadow-sm"
+          key={path}
+          className="border-2 border-gray-300 rounded-lg shadow-sm"
         >
-          <NextLink href={route} className="text-blue-600">
-            {route}
+          <NextLink
+            href={path}
+            className="text-blue-600 flex p-2 border-inherit"
+          >
+            {name}
           </NextLink>
         </li>
       ))}

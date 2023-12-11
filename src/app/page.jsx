@@ -4,11 +4,25 @@ import WordmarkLogo from '/public/wordmark-logo.svg';
 
 export default function Home() {
   return (
-    <>
-      <div className="w-32 mb-3">
+    <main>
+      <div className="w-32 p-2 mb-3">
         <WordmarkLogo />
       </div>
+      <p className="p-2 mb-3">
+        <a
+          href="www.tuatmcc.com"
+          target="_blank"
+          rel="noreferrer"
+          className="text-blue-500 hover:underline hover:text-blue-700 font-bold"
+        >
+          MCC
+        </a>{' '}
+        のオリジナルモデル(開発中)をプレビューするためのサイトです。
+      </p>
       <NavMenu />
-    </>
+      <p className="p-2 text-gray-600 text-center mt-3">
+        {'\u00A9'} 2021 東京農工大学マイクロコンピュータークラブ
+      </p>
+    </main>
   );
 }

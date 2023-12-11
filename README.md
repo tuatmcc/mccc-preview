@@ -3,7 +3,7 @@
 A Website for previewing [mccc 3D model](https://github.com/tuatmcc/mccc)
 
 - **Cloudflare Pages** (@cloudflare/next-on-pages): Hosting Service
-- **bun**: JavaScript runtime & package manager (faster than Node.js)
+- **pnpm**: Node.js package manager
 - **Next.js**: React Framework
 - **React Three Fiber**: `Three.js` wrapper for React
 
@@ -12,23 +12,20 @@ A Website for previewing [mccc 3D model](https://github.com/tuatmcc/mccc)
 While Three.js lacks official TypeScript support, the community-maintained `@types/three` library does provide excellent type definitions.
 However, its coverage isn't exhaustive, and many existing examples and documents use JavaScript.
 
-## Usage
+## Setup
 
-```sh
-bun i # install dependencies
-```
+1. Install [Volta](https://volta.sh/), a JavaScript runtime manager.
+2. `volta install node` to install Node.js.
+3. `volta install corepack` to install package-manager manager.
+4. `corepack up` to install pnpm according to `package.json`.
+5. `pnpm install` to install dependencies.
+6. `pnpm prebuild` to clone the model's repository (need for deployment)
 
-```sh
-bun dev # create development server on localhost:3000
-```
+## Development
 
-```sh
-bun lint # run code style check using @biomejs/biome
-```
-
-```sh
-bun fmt # run format and code fix with @biomejs/biome
-```
+- `pnpm dev` to start the development server at `localhost:3000`.
+- `pnpm lint` to lint the code.
+- `pnpm fmt` to format the code.
 
 ## Deployment
 
@@ -40,6 +37,8 @@ As a `prebuild` hook, it clones the model's repository and copy `mccc.gltf` into
 - Build Settings
   - Build command: `bunx @cloudflare/next-on-pages@1`
   - Build directory: `.vercel/output/static`
+- Environment Variables
+    - `NODE_VERSION`: `20`
 - Function Settings
   - flags: `nodejs_compat`
 

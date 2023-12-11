@@ -31,7 +31,7 @@ const Box = (props) => {
 
 export const SampleCubes = () => {
   return (
-    <div className="h-screen">
+    <div className="h-screen-s">
       <Canvas>
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
