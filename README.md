@@ -19,7 +19,7 @@ However, its coverage isn't exhaustive, and many existing examples and documents
 3. `volta install corepack` to install package-manager manager.
 4. `corepack up` to install pnpm according to `package.json`.
 5. `pnpm install` to install dependencies.
-6. `pnpm prebuild` to clone the model's repository (need for deployment)
+6. `pnpm prebuild` to clone the model's repository (necessary for deployment)
 
 ## Development
 
