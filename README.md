@@ -35,7 +35,7 @@ Cloudflare will automatically detect bun.
 As a `prebuild` hook, it clones the model's repository and copy `mccc.gltf` into `public/modles/`.
 
 - Build Settings
-  - Build command: `bunx @cloudflare/next-on-pages@1`
+  - Build command: `pnpm prebuild && pnpx @cloudflare/next-on-pages@1`
   - Build directory: `.vercel/output/static`
 - Environment Variables
     - `NODE_VERSION`: `20`
