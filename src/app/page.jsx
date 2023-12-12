@@ -21,7 +21,7 @@ export default function Home() {
       </p>
       <NavMenu />
       <p className="p-2 my-3 text-sm">
-        <a 
+        <a
           href="https://github.com/tuatmcc/mccc"
           target="_blank"
           rel="noreferrer"
@@ -29,9 +29,8 @@ export default function Home() {
         >
           開発中のモデル
         </a>
-        が更新されると自動でこのサイトも更新されます。
-        ソースコード →
-        <a 
+        が更新されると自動でこのサイトも更新されます。 ソースコード →
+        <a
           href="https://github.com/tuatmcc/mccc-preview"
           target="_blank"
           rel="noreferrer"

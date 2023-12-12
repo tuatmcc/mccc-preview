@@ -2,33 +2,9 @@
 
 import { modelList } from '@/generated/mccc';
 import { OrbitControls, Stats } from '@react-three/drei';
-import { Canvas, useLoader } from '@react-three/fiber';
-import { useRef } from 'react';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-
-import { useControls } from 'leva';
+import { Canvas } from '@react-three/fiber';
 import { Lights } from '../Lights';
-
-const Model = ({ path }) => {
-  const ref = useRef();
-  const name = path.replace(/^\/models\/|\..*/g, '');
-  useControls('Models', {
-    [name]: {
-      value: name.startsWith('_') ? false : true,
-      onChange: (v) => {
-        if (ref.current) {
-          ref.current.visible = v;
-        }
-      },
-    },
-  });
-  const gltf = useLoader(GLTFLoader, path);
-  return (
-    <group ref={ref}>
-      <primitive object={gltf.scene} />;
-    </group>
-  );
-};
+import { Model } from '../Model';
 
 export const PreviewScene = () => {
   return (

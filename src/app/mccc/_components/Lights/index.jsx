@@ -1,3 +1,5 @@
+'use client';
+
 import { useControls } from 'leva';
 import React, { useRef } from 'react';
 import * as three from 'three';
