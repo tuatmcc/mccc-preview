@@ -11,9 +11,10 @@ import { Lights } from '../Lights';
 
 const Model = ({ path }) => {
   const ref = useRef();
+  const name = path.replace(/^\/models\/|\..*/g, '');
   useControls('Models', {
-    [path.replace(/^\/models\/|\..*/g, '')]: {
-      value: true,
+    [name]: {
+      value: name.startsWith('_') ? false : true,
       onChange: (v) => {
         if (ref.current) {
           ref.current.visible = v;
