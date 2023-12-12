@@ -17,7 +17,7 @@ export default function Home() {
         >
           MCC
         </a>{' '}
-        のオリジナルモデル(開発中)をプレビューするためのサイトです。
+        のオリジナル3Dキャラクター(開発中)をプレビューするためのサイトです。
       </p>
       <NavMenu />
       <p className="p-2 my-3 text-sm">

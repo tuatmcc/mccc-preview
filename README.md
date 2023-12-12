@@ -19,7 +19,7 @@ However, its coverage isn't exhaustive, and many existing examples and documents
 3. `volta install corepack` to install package-manager manager.
 4. `corepack up` to install pnpm according to `package.json`.
 5. `pnpm install` to install dependencies.
-6. `pnpm prebuild` to clone the model's repository (necessary for deployment)
+6. `pnpm fetch-model` to clone the model's repository and move `*.gltf` to `public/models` (necessary for deployment)
 
 ## Development
 
@@ -32,13 +32,12 @@ However, its coverage isn't exhaustive, and many existing examples and documents
 All deployment configuration is set in the Cloudflare dashboard.
 Cloudflare will automatically detect bun.
 
-As a `prebuild` hook, it clones the model's repository and copy `*.gltf` into `public/modles/`.
-
 - Build Settings
-  - Build command: `pnpm prebuild && pnpx @cloudflare/next-on-pages@1`
+  - Build command: `pnpm build:cloudflare:pnpm`
   - Build directory: `.vercel/output/static`
 - Environment Variables
     - `NODE_VERSION`: `20`
 - Function Settings
   - flags: `nodejs_compat`
 
+Copy Cloudflare's deploy webhook URL and set it to the model's github repository's webhook so that the model is automatically updated when the model's repository is updated.
