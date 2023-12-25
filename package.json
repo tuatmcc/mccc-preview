@@ -23,7 +23,7 @@
     "glob": "^10.3.10",
     "leva": "^0.9.35",
     "next": "14.0.4",
-    "postprocessing": "^6.33.4",
+    "postprocessing": "^6.34.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "simple-git": "^3.21.0",

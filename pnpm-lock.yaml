@@ -27,8 +27,8 @@ dependencies:
     specifier: 14.0.4
     version: 14.0.4(@babel/core@7.23.6)(react-dom@18.2.0)(react@18.2.0)
   postprocessing:
-    specifier: ^6.33.4
-    version: 6.33.4(three@0.159.0)
+    specifier: ^6.34.0
+    version: 6.34.0(three@0.159.0)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -2454,8 +2454,8 @@ packages:
       '@react-three/fiber': 8.15.12(react-dom@18.2.0)(react@18.2.0)(three@0.159.0)
       buffer: 6.0.3
       maath: 0.6.0(@types/three@0.159.0)(three@0.159.0)
-      n8ao: 1.7.0(postprocessing@6.33.4)(three@0.159.0)
-      postprocessing: 6.33.4(three@0.159.0)
+      n8ao: 1.7.0(postprocessing@6.34.0)(three@0.159.0)
+      postprocessing: 6.34.0(three@0.159.0)
       react: 18.2.0
       three: 0.159.0
       three-stdlib: 2.28.7(three@0.159.0)
@@ -4963,13 +4963,13 @@ packages:
       thenify-all: 1.6.0
     dev: true
 
-  /n8ao@1.7.0(postprocessing@6.33.4)(three@0.159.0):
+  /n8ao@1.7.0(postprocessing@6.34.0)(three@0.159.0):
     resolution: {integrity: sha512-0Ne+dnzlKByj4UR+OfPU04CanmbNPPtYcqJqWWcPw00CiMOLhkE23/gwoROLACKMRLuWsqhW2cMf5pYlywrIAQ==}
     peerDependencies:
       postprocessing: '>=6.30.0'
       three: '>=0.137'
     dependencies:
-      postprocessing: 6.33.4(three@0.159.0)
+      postprocessing: 6.34.0(three@0.159.0)
       three: 0.159.0
     dev: false
 
@@ -5337,11 +5337,11 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /postprocessing@6.33.4(three@0.159.0):
-    resolution: {integrity: sha512-2gFymFsEEKVGGD9g/JDi8bNzFNc4PGQiVn3oMYTZd+ebc90gHFXI4eWircELHADxaQVYMlhHvhCpsnlJ1SLhQw==}
+  /postprocessing@6.34.0(three@0.159.0):
+    resolution: {integrity: sha512-g2zi/jgJATsTa4HfIqPUSaOLOQguvecXFP7JaqmaiS+nrD3Y1qj7m9vRhm5CWOkGhb1UwMBaGkn0H4L8vTAE1Q==}
     engines: {node: '>= 0.13.2'}
     peerDependencies:
-      three: '>= 0.138.0 < 0.160.0'
+      three: '>= 0.138.0 < 0.161.0'
     dependencies:
       three: 0.159.0
     dev: false
