@@ -30,7 +30,7 @@
     "three": "^0.159.0"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.8.2",
+    "@cloudflare/next-on-pages": "^1.8.3",
     "@svgr/webpack": "^8.1.0",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.32",
