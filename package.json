@@ -26,7 +26,7 @@
     "postprocessing": "^6.34.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "simple-git": "^3.21.0",
+    "simple-git": "^3.22.0",
     "three": "^0.159.0"
   },
   "devDependencies": {
