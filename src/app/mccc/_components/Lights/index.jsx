@@ -16,7 +16,7 @@ export const Lights = () => {
       },
     },
     intensity: {
-      value: 2,
+      value: 4,
       onChange: (v) => {
         ambientRef.current.intensity = v;
       },
@@ -31,9 +31,15 @@ export const Lights = () => {
 
   useControls('Directional Light', {
     visible: {
-      value: true,
+      value: false,
       onChange: (v) => {
         directionalRef.current.visible = v;
+      },
+    },
+    intensity: {
+      value: 1,
+      onChange: (v) => {
+        ambientRef.current.intensity = v;
       },
     },
     position: {
