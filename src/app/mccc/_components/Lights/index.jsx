@@ -16,7 +16,7 @@ export const Lights = () => {
       },
     },
     intensity: {
-      value: 4,
+      value: 3,
       onChange: (v) => {
         ambientRef.current.intensity = v;
       },
