@@ -1,45 +1,16 @@
-'use client';
+"use client";
 
-import { useControls } from 'leva';
-import React, { useRef } from 'react';
-import * as three from 'three';
+import { useControls } from "leva";
+import React, { useRef } from "react";
 
 export const Lights = () => {
-  const ambientRef = useRef();
   const directionalRef = useRef();
 
-  useControls('Ambient Light', {
-    visible: {
-      value: true,
-      onChange: (v) => {
-        ambientRef.current.visible = v;
-      },
-    },
-    intensity: {
-      value: 3,
-      onChange: (v) => {
-        ambientRef.current.intensity = v;
-      },
-    },
-    color: {
-      value: 'white',
-      onChange: (v) => {
-        ambientRef.current.color = new three.Color(v);
-      },
-    },
-  });
-
-  useControls('Directional Light', {
+  useControls("Directional Light", {
     visible: {
       value: false,
       onChange: (v) => {
         directionalRef.current.visible = v;
-      },
-    },
-    intensity: {
-      value: 1,
-      onChange: (v) => {
-        ambientRef.current.intensity = v;
       },
     },
     position: {
@@ -54,7 +25,7 @@ export const Lights = () => {
 
   return (
     <>
-      <ambientLight intensity={3} ref={ambientRef} />
+      <ambientLight intensity={3} />
       <directionalLight ref={directionalRef} />
     </>
   );
