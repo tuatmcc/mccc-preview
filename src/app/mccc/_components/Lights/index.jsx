@@ -54,7 +54,7 @@ export const Lights = () => {
 
   return (
     <>
-      <ambientLight ref={ambientRef} />
+      <ambientLight intensity={3} ref={ambientRef} />
       <directionalLight ref={directionalRef} />
     </>
   );
