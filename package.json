@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@biomejs/biome": "^1.4.1",
-    "@react-three/drei": "^9.92.6",
+    "@react-three/drei": "^9.96.3",
     "@react-three/fiber": "^8.15.14",
     "@react-three/postprocessing": "^2.15.11",
     "glob": "^10.3.10",
