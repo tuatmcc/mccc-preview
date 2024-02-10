@@ -19,7 +19,7 @@
     "@biomejs/biome": "^1.5.3",
     "@react-three/drei": "^9.97.0",
     "@react-three/fiber": "^8.15.16",
-    "@react-three/postprocessing": "^2.15.11",
+    "@react-three/postprocessing": "^2.15.13",
     "glob": "^10.3.10",
     "leva": "^0.9.35",
     "next": "14.1.0",
