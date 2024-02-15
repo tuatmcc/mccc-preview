@@ -3,7 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
-.pnp.js
+.pnp.jsbun
 .yarn/install-state.gz
 
 # testing
@@ -44,3 +44,6 @@ temp/
 # generated
 /src/generated/**
 !/src/generated/.gitkeep
+
+# bun
+/bun.lockb
