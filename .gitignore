@@ -47,3 +47,6 @@ temp/
 
 # bun
 /bun.lockb
+
+# pathpida
+/src/utils/$path.ts

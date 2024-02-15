@@ -1,13 +1,14 @@
-import NextLink from 'next/link';
+import { pagesPath } from "@/utils/$path";
+import NextLink from "next/link";
 
 const routes = [
   {
-    name: 'React Three Fiber Sample',
-    path: '/sample',
+    name: "React Three Fiber Sample",
+    path: pagesPath.sample.$url(),
   },
   {
-    name: 'MCCC',
-    path: '/mccc',
+    name: "MCCC",
+    path: pagesPath.mccc.$url(),
   },
 ];
 

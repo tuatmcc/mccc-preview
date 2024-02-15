@@ -1,4 +1,4 @@
-import { PreviewScene } from './_components/PreviewScene';
+import { PreviewScene } from "./_components";
 
 /** @type {import('next').NextPage}*/
 export default function Page() {

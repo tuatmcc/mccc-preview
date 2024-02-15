@@ -3,10 +3,9 @@
 import { modelList } from "@/generated/mccc";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { Bloom, EffectComposer } from "@react-three/postprocessing";
 import { Lights } from "../Lights";
 import { Model } from "../Model";
-import { EffectComposer, Bloom } from "@react-three/postprocessing";
-import { ToggleDarkMode } from "../ToggleDarkMode";
 
 export const PreviewScene = () => {
   return (
@@ -22,7 +21,6 @@ export const PreviewScene = () => {
           <Bloom luminanceThreshold={1} mipmapBlur={true} />
         </EffectComposer>
       </Canvas>
-      <ToggleDarkMode />
     </div>
   );
 };

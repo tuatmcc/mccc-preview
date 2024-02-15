@@ -1,13 +1,13 @@
-import { Inter } from 'next/font/google';
+import { Inter } from "next/font/google";
 
-import './globals.css';
+import "./globals.css";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 /** @type {import('next').Metadata} */
 export const metadata = {
-  title: 'MCCC 3D Previewer',
-  description: 'A 3D previewer for MCCC - MCC Character (MCC-chan)',
+  title: "MCCC 3D Previewer",
+  description: "A 3D previewer for MCCC - MCC Character (MCC-chan)",
 };
 
 export default function RootLayout({ children }) {
@@ -16,8 +16,8 @@ export default function RootLayout({ children }) {
       <body
         className={[
           inter.className,
-          'bg-white text-gray-800 dark:bg-gray-800 dark:text-white',
-        ].join(' ')}
+          "bg-white text-gray-800 transition-colors dark:bg-gray-800 dark:text-white",
+        ].join(" ")}
       >
         {children}
       </body>
