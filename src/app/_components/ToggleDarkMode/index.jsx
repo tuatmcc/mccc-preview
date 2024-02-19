@@ -1,30 +1,30 @@
-"use client";
+'use client';
 
-import { useCallback, useEffect } from "react";
-import DarkModeIcon from "/public/icons/dark-mode.svg";
+import { useCallback, useEffect } from 'react';
+import DarkModeIcon from '/public/icons/dark-mode.svg';
 
 export const ToggleDarkMode = () => {
   useEffect(() => {
     if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
     ) {
-      localStorage.theme = "dark";
-      document.documentElement.classList.add("dark");
+      localStorage.theme = 'dark';
+      document.documentElement.classList.add('dark');
     } else {
-      localStorage.theme = "light";
-      document.documentElement.classList.remove("dark");
+      localStorage.theme = 'light';
+      document.documentElement.classList.remove('dark');
     }
   }, []);
 
   const toggleDarkMode = useCallback(() => {
-    if (localStorage.theme === "dark") {
-      localStorage.theme = "light";
-      document.documentElement.classList.remove("dark");
+    if (localStorage.theme === 'dark') {
+      localStorage.theme = 'light';
+      document.documentElement.classList.remove('dark');
     } else {
-      localStorage.theme = "dark";
-      document.documentElement.classList.add("dark");
+      localStorage.theme = 'dark';
+      document.documentElement.classList.add('dark');
     }
   }, []);
 

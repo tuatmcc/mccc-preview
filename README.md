@@ -14,10 +14,13 @@ However, its coverage isn't exhaustive, and many existing examples and documents
 
 ## Setup
 
-1. Install and Setup [mise](https://mise.jdx.dev/) or [volta](https://volta.sh), a JavaScript runtime manager.
-2. `corepack up` to install pnpm according to `package.json`.
-3. `pnpm install` to install dependencies.
-4. `pnpm fetch-model` to clone the model's repository and move `*.gltf` to `public/models` (necessary for deployment)
+All you need is `node` and `pnpm`. You can install them as you like, but I recommend using `mise` and `corepack` for a consistent development environment.
+
+1. (Optional) Install and Setup [mise](https://mise.jdx.dev/), a JavaScript runtime manager. (Another option is `volta`, `nodenv`, `nvm`, etc.)
+2. (Optional) Setup corepack [corepack](https://github.com/nodejs/corepack), a package manager manager.
+3. `corepack up` to install pnpm according to `package.json` settings.
+4. `pnpm install` to install dependencies.
+5. `pnpm fetch-model` (to clone the model's repository and move `*.gltf` to `public/models`)
 
 ## Development
 

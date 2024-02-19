@@ -1,28 +1,28 @@
-"use client";
+'use client';
 
-import NextLink from "next/link";
-import { useState } from "react";
-import Logo from "/public/icons/logo.svg";
-import WordmarkLogo from "/public/icons/wordmark-logo.svg";
-import { NavMenu } from "../NavMenu";
-import { ToggleDarkMode } from "../ToggleDarkMode";
+import NextLink from 'next/link';
+import { useState } from 'react';
+import Logo from '/public/icons/logo.svg';
+import WordmarkLogo from '/public/icons/wordmark-logo.svg';
+import { NavMenu } from '../NavMenu';
+import { ToggleDarkMode } from '../ToggleDarkMode';
 
 export const NavMenuButton = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <div
-        className={`fixed inset-0 ${isOpen ? "block" : "hidden"}`}
+        className={`fixed inset-0 ${isOpen ? 'block' : 'hidden'}`}
         onClick={() => setIsOpen(false)}
         onKeyDown={(e) => {
-          if (e.key === "Escape") {
+          if (e.key === 'Escape') {
             setIsOpen(false);
           }
         }}
       />
       <div
         className={`fixed flex flex-col gap-2 h-full top-0 transition-all shadow-lg backdrop-blur-md ${
-          isOpen ? "left-0" : "-left-full"
+          isOpen ? 'left-0' : '-left-full'
         }`}
         hidden={!isOpen}
       >
@@ -37,7 +37,7 @@ export const NavMenuButton = () => {
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}
         onKeyDown={(e) => {
-          if (e.key === "Escape") {
+          if (e.key === 'Escape') {
             setIsOpen(false);
           }
         }}

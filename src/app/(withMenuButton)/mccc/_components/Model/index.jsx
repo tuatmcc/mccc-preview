@@ -11,7 +11,7 @@ export const Model = ({ path }) => {
   const name = path.replace(/^\/models\/|\..*/g, '');
   useControls('Models', {
     [name]: {
-      value: name.startsWith('_') ? false : true,
+      value: name.startsWith('_'),
       onChange: (v) => {
         if (ref.current) {
           ref.current.visible = v;

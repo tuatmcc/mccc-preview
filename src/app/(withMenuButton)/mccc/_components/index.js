@@ -1,1 +1,1 @@
-export * from './PreviewScene'
+export * from './PreviewScene';

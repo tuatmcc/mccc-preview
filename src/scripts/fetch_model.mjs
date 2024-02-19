@@ -1,6 +1,6 @@
-import { join } from 'path';
-import { copyFile, mkdir, rm } from 'fs/promises';
-import { writeFile } from 'fs/promises';
+import { copyFile, mkdir, rm } from 'node:fs/promises';
+import { writeFile } from 'node:fs/promises';
+import { join } from 'node:path';
 import { glob } from 'glob';
 import { simpleGit } from 'simple-git';
 

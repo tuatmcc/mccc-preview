@@ -1,6 +1,6 @@
-import { NavMenu } from "@/app/_components/NavMenu";
+import { NavMenu } from '@/app/_components/NavMenu';
 
-import WordmarkLogo from "/public/icons/wordmark-logo.svg";
+import WordmarkLogo from '/public/icons/wordmark-logo.svg';
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
           className="text-blue-500 hover:underline hover:text-blue-700 font-bold"
         >
           MCC
-        </a>{" "}
+        </a>{' '}
         のオリジナル3Dキャラクター(開発中)をプレビューするためのサイトです。
       </p>
       <NavMenu />
@@ -40,7 +40,7 @@ export default function Home() {
         </a>
       </p>
       <p className="p-2 text-gray-600 text-sm text-center mt-3">
-        {"\u00A9"} 2023 東京農工大学マイクロコンピュータークラブ
+        {'\u00A9'} 2023 東京農工大学マイクロコンピュータークラブ
       </p>
     </main>
   );

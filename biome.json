@@ -9,6 +9,9 @@
       "all": true,
       "style": {
         "noDefaultExport": "off"
+      },
+      "nursery": {
+        "noNodejsModules": "off"
       }
     }
   },
@@ -18,23 +21,12 @@
   "javascript": {
     "formatter": {
       "enabled": true,
-      "quoteStyle": "single"
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double"
     }
   },
   "files": {
-    "include": [
-      "src/**/*.jsx",
-      "src/**/*.js",
-      "scripts/**/*.js",
-      "scripts/**/*.jsx"
-    ],
-    "ignore": [
-      "node_modules/**/*",
-      ".next/**/*",
-      ".vercel/**/*",
-      "out/**/*",
-      "**/generated/**/*"
-    ]
+    "ignore": ["./src/utils/$path.ts"]
   },
   "vcs": {
     "enabled": true,

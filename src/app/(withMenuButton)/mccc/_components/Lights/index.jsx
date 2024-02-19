@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { useControls } from "leva";
-import React, { useRef } from "react";
+import { useControls } from 'leva';
+import { useRef } from 'react';
 
 export const Lights = () => {
   const directionalRef = useRef();
 
-  useControls("Directional Light", {
+  useControls('Directional Light', {
     visible: {
       value: false,
       onChange: (v) => {
