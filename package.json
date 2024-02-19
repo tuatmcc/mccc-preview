@@ -6,14 +6,14 @@
   "scripts": {
     "dev": "run-p dev:*",
     "dev:next": "next dev",
-    "dev:path": "pathpida --ignorePath .gitignore --output src/utils/",
+    "dev:path": "pathpida --ignorePath .gitignore --output src/utils/ --watch",
     "build": "next build",
     "start": "next start",
     "lint": "biome check .",
     "fmt": "biome check . --apply",
     "fmt:force": "biome check . --apply-unsafe",
     "fetch-model": "node ./src/scripts/fetch_model.mjs",
-    "prebuild": "pnpm fetch-model && pnpm dev:path",
+    "prebuild": "pnpm fetch-model",
     "build:cloudflare": "pnpx @cloudflare/next-on-pages@1",
     "build:cloudflare:pnpm": "pnpm prebuild && pnpm build:cloudflare"
   },
@@ -43,5 +43,5 @@
   "volta": {
     "node": "20.11.1"
   },
-  "packageManager": "pnpm@8.15.2+sha256.90bb5d6382cb2cb8b8d4959a076b3953d84d1d94121717097bcd41c71344fa14"
+  "packageManager": "pnpm@8.15.3+sha256.fc4a49bd609550a41e14d20efbce802a4b892aa4cac877322de2f0924f122991"
 }

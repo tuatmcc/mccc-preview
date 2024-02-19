@@ -45,8 +45,5 @@ temp/
 /src/generated/**
 !/src/generated/.gitkeep
 
-# bun
+# bun --- u can use it only for your local project
 /bun.lockb
-
-# pathpida
-/src/utils/$path.ts

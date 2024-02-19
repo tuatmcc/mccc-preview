@@ -14,12 +14,10 @@ However, its coverage isn't exhaustive, and many existing examples and documents
 
 ## Setup
 
-1. Install [Volta](https://volta.sh/), a JavaScript runtime manager.
-2. `volta install node` to install Node.js.
-3. `volta install corepack` to install package-manager manager.
-4. `corepack up` to install pnpm according to `package.json`.
-5. `pnpm install` to install dependencies.
-6. `pnpm fetch-model` to clone the model's repository and move `*.gltf` to `public/models` (necessary for deployment)
+1. Install and Setup [mise](https://mise.jdx.dev/) or [volta](https://volta.sh), a JavaScript runtime manager.
+2. `corepack up` to install pnpm according to `package.json`.
+3. `pnpm install` to install dependencies.
+4. `pnpm fetch-model` to clone the model's repository and move `*.gltf` to `public/models` (necessary for deployment)
 
 ## Development
 
