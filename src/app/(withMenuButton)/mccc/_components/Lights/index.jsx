@@ -24,7 +24,7 @@ export const Lights = () => {
     },
   });
 
-  useControl('Ambient Light', {
+  useControls('Ambient Light', {
     visible: {
       value: true,
       onChange: (v) => {
