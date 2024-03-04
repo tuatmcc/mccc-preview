@@ -5,6 +5,7 @@ import { useRef } from 'react';
 
 export const Lights = () => {
   const directionalRef = useRef();
+  const ambientRef = useRef();
 
   useControls('Directional Light', {
     visible: {
@@ -23,9 +24,18 @@ export const Lights = () => {
     },
   });
 
+  useControl('Ambient Light', {
+    visible: {
+      value: true,
+      onChange: (v) => {
+        ambientRef.current.visible = v;
+      },
+    },
+  });
+
   return (
     <>
-      <ambientLight intensity={3} />
+      <ambientLight intensity={3} ref={ambientRef} />
       <directionalLight ref={directionalRef} />
     </>
   );
