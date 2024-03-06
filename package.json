@@ -34,7 +34,7 @@
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.9.0",
     "@svgr/webpack": "^8.1.0",
-    "autoprefixer": "^10.4.17",
+    "autoprefixer": "^10.4.18",
     "npm-run-all2": "^6.1.2",
     "pathpida": "^0.22.0",
     "postcss": "^8.4.35",
