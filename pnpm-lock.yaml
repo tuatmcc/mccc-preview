@@ -10,13 +10,13 @@ dependencies:
     version: 1.5.3
   '@react-three/drei':
     specifier: ^9.99.4
-    version: 9.99.4(@react-three/fiber@8.15.16)(@types/three@0.161.2)(react-dom@18.2.0)(react@18.2.0)(three@0.161.0)
+    version: 9.99.4(@react-three/fiber@8.15.19)(@types/three@0.161.2)(react-dom@18.2.0)(react@18.2.0)(three@0.161.0)
   '@react-three/fiber':
-    specifier: ^8.15.16
-    version: 8.15.16(react-dom@18.2.0)(react@18.2.0)(three@0.161.0)
+    specifier: ^8.15.19
+    version: 8.15.19(react-dom@18.2.0)(react@18.2.0)(three@0.161.0)
   '@react-three/postprocessing':
     specifier: ^2.16.0
-    version: 2.16.0(@react-three/fiber@8.15.16)(@types/three@0.161.2)(react@18.2.0)(three@0.161.0)
+    version: 2.16.0(@react-three/fiber@8.15.19)(@types/three@0.161.2)(react@18.2.0)(three@0.161.0)
   glob:
     specifier: ^10.3.10
     version: 10.3.10
@@ -2360,7 +2360,7 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@react-spring/three@9.6.1(@react-three/fiber@8.15.16)(react@18.2.0)(three@0.161.0):
+  /@react-spring/three@9.6.1(@react-three/fiber@8.15.19)(react@18.2.0)(three@0.161.0):
     resolution: {integrity: sha512-Tyw2YhZPKJAX3t2FcqvpLRb71CyTe1GvT3V+i+xJzfALgpk10uPGdGaQQ5Xrzmok1340DAeg2pR/MCfaW7b8AA==}
     peerDependencies:
       '@react-three/fiber': '>=6.0'
@@ -2371,7 +2371,7 @@ packages:
       '@react-spring/core': 9.6.1(react@18.2.0)
       '@react-spring/shared': 9.6.1(react@18.2.0)
       '@react-spring/types': 9.6.1
-      '@react-three/fiber': 8.15.16(react-dom@18.2.0)(react@18.2.0)(three@0.161.0)
+      '@react-three/fiber': 8.15.19(react-dom@18.2.0)(react@18.2.0)(three@0.161.0)
       react: 18.2.0
       three: 0.161.0
     dev: false
@@ -2380,7 +2380,7 @@ packages:
     resolution: {integrity: sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==}
     dev: false
 
-  /@react-three/drei@9.99.4(@react-three/fiber@8.15.16)(@types/three@0.161.2)(react-dom@18.2.0)(react@18.2.0)(three@0.161.0):
+  /@react-three/drei@9.99.4(@react-three/fiber@8.15.19)(@types/three@0.161.2)(react-dom@18.2.0)(react@18.2.0)(three@0.161.0):
     resolution: {integrity: sha512-Dig6SmsOIF1LiGAatU0WjFAgNqCixfHhO6BGlvb16E0vVi+t3S5WJbyEQO6msRgYu7pGQLCy9m0iBcfLUz8vkw==}
     peerDependencies:
       '@react-three/fiber': '>=8.0'
@@ -2393,8 +2393,8 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.9
       '@mediapipe/tasks-vision': 0.10.8
-      '@react-spring/three': 9.6.1(@react-three/fiber@8.15.16)(react@18.2.0)(three@0.161.0)
-      '@react-three/fiber': 8.15.16(react-dom@18.2.0)(react@18.2.0)(three@0.161.0)
+      '@react-spring/three': 9.6.1(@react-three/fiber@8.15.19)(react@18.2.0)(three@0.161.0)
+      '@react-three/fiber': 8.15.19(react-dom@18.2.0)(react@18.2.0)(three@0.161.0)
       '@use-gesture/react': 10.3.0(react@18.2.0)
       camera-controls: 2.8.2(three@0.161.0)
       cross-env: 7.0.3
@@ -2422,8 +2422,8 @@ packages:
       - immer
     dev: false
 
-  /@react-three/fiber@8.15.16(react-dom@18.2.0)(react@18.2.0)(three@0.161.0):
-    resolution: {integrity: sha512-4f47K9e2mP8W/guNtu3e2J/Nt6GwKTsX/YP2dktPZRcpHYEsqfXCO8kSfvVMb+lQ8wR0HoFzggqdnGuhZaui0g==}
+  /@react-three/fiber@8.15.19(react-dom@18.2.0)(react@18.2.0)(three@0.161.0):
+    resolution: {integrity: sha512-WbFU7T6485v8Onnp+JJnrzKFvvGP7OFyJmHlqXiXc2RcXl9Sax+ykJxiNwEXWjGjcgF9/KTfv0+pAVkP0vZlKg==}
     peerDependencies:
       expo: '>=43.0'
       expo-asset: '>=8.4'
@@ -2463,14 +2463,14 @@ packages:
       zustand: 3.7.2(react@18.2.0)
     dev: false
 
-  /@react-three/postprocessing@2.16.0(@react-three/fiber@8.15.16)(@types/three@0.161.2)(react@18.2.0)(three@0.161.0):
+  /@react-three/postprocessing@2.16.0(@react-three/fiber@8.15.19)(@types/three@0.161.2)(react@18.2.0)(three@0.161.0):
     resolution: {integrity: sha512-Cc+VIOxD2jVEgXrc66W6yQaAxTMg02ef2N1B5ldyLtTt22n75JxolYTullQqY4zTsyLEmORvaO85SRlZwg6Avw==}
     peerDependencies:
       '@react-three/fiber': '>=8.0'
       react: '>=18.0'
       three: '>= 0.138.0'
     dependencies:
-      '@react-three/fiber': 8.15.16(react-dom@18.2.0)(react@18.2.0)(three@0.161.0)
+      '@react-three/fiber': 8.15.19(react-dom@18.2.0)(react@18.2.0)(three@0.161.0)
       buffer: 6.0.3
       maath: 0.6.0(@types/three@0.161.2)(three@0.161.0)
       n8ao: 1.8.1(postprocessing@6.34.3)(three@0.161.0)
