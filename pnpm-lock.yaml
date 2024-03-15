@@ -44,8 +44,8 @@ dependencies:
 
 devDependencies:
   '@cloudflare/next-on-pages':
-    specifier: ^1.9.0
-    version: 1.9.0(vercel@33.5.1)(wrangler@3.28.2)
+    specifier: ^1.10.0
+    version: 1.10.0(vercel@33.5.1)(wrangler@3.28.2)
   '@svgr/webpack':
     specifier: ^8.1.0
     version: 8.1.0(typescript@4.9.5)
@@ -1433,13 +1433,13 @@ packages:
       mime: 3.0.0
     dev: true
 
-  /@cloudflare/next-on-pages@1.9.0(vercel@33.5.1)(wrangler@3.28.2):
-    resolution: {integrity: sha512-fa46YoaKLRS0xIWlprrQD66bLMOUvvvfqQNkUZTeAk87QBRzgkm14RqrnO2ro2uHYNqW5qf9lhKbq2IUGQWJRQ==}
+  /@cloudflare/next-on-pages@1.10.0(vercel@33.5.1)(wrangler@3.28.2):
+    resolution: {integrity: sha512-N0aGSRxinxQFbsQWGV7d/uhRclYup2itv34x9hkfwGeFLbQxZVSSkZHIYuk8R+1mmxfAWm3rRFKo6bT7PaMAVA==}
     hasBin: true
     peerDependencies:
       '@cloudflare/workers-types': ^4.20240208.0
       vercel: '>=30.0.0'
-      wrangler: ^3.28.0
+      wrangler: ^3.28.2
     peerDependenciesMeta:
       '@cloudflare/workers-types':
         optional: true
