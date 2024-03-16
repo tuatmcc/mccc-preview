@@ -46,4 +46,4 @@ temp/
 !/src/generated/.gitkeep
 
 # bun --- u can use it only for your local project
-/bun.lockb
+# /bun.lockb
