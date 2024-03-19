@@ -12,10 +12,10 @@
     "lint": "biome check .",
     "fmt": "biome check . --apply",
     "fmt:force": "biome check . --apply-unsafe",
-    "fetch-model": "node ./src/scripts/fetch_model.mjs",
-    "prebuild": "pnpm fetch-model",
-    "build:cloudflare": "pnpx @cloudflare/next-on-pages@1",
-    "build:cloudflare:pnpm": "pnpm prebuild && pnpm build:cloudflare"
+    "fetch-model": "bun ./src/scripts/fetch_model.mjs",
+    "prebuild": "run-s fetch-model",
+    "build:cloudflare": "bunx @cloudflare/next-on-pages@1",
+    "build:prod": "run-s build build:cloudflare"
   },
   "dependencies": {
     "@biomejs/biome": "^1.6.1",
