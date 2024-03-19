@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { modelList } from "@/generated/mccc";
-import { OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import { Bloom, EffectComposer } from "@react-three/postprocessing";
-import { Lights } from "../Lights";
-import { Model } from "../Model";
+import { modelList } from '@/generated/mccc';
+import { OrbitControls } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+import { Bloom, EffectComposer } from '@react-three/postprocessing';
+import { Lights } from '../Lights';
+import { Model } from '../Model';
 
 export const PreviewScene = () => {
   return (

@@ -65,7 +65,7 @@ async function copyModles(files) {
     await copyFile(file, dest);
     return `/${resolvedPath}`;
   });
-  return Promise.all(resolvedFiles);
+  return await Promise.all(resolvedFiles);
 }
 
 /**
