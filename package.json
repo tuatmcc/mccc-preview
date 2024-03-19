@@ -13,9 +13,8 @@
     "fmt": "biome check . --apply",
     "fmt:force": "biome check . --apply-unsafe",
     "fetch-model": "node ./src/scripts/fetch_model.mjs",
-    "prebuild": "pnpm fetch-model",
-    "build:cloudflare": "pnpx @cloudflare/next-on-pages@1",
-    "build:cloudflare:pnpm": "pnpm prebuild && pnpm build:cloudflare"
+    "next-on-pages": "pnpx @cloudflare/next-on-pages@1",
+    "build:prod": "run-s fetch-model next-on-pages"
   },
   "dependencies": {
     "@biomejs/biome": "^1.6.1",
