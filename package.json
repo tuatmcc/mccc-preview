@@ -21,7 +21,7 @@
     "@react-three/drei": "^9.102.6",
     "@react-three/fiber": "^8.16.0",
     "@react-three/postprocessing": "^2.16.2",
-    "glob": "^10.3.10",
+    "glob": "^10.3.12",
     "leva": "^0.9.35",
     "next": "14.1.4",
     "postprocessing": "^6.35.2",
