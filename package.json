@@ -19,7 +19,7 @@
   "dependencies": {
     "@biomejs/biome": "^1.6.2",
     "@react-three/drei": "^9.105.6",
-    "@react-three/fiber": "^8.16.0",
+    "@react-three/fiber": "^8.16.7",
     "@react-three/postprocessing": "^2.16.2",
     "glob": "^10.3.12",
     "leva": "^0.9.35",
