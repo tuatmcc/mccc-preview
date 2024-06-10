@@ -17,7 +17,7 @@
     "build:prod": "run-s fetch-model next-on-pages"
   },
   "dependencies": {
-    "@biomejs/biome": "^1.6.2",
+    "@biomejs/biome": "^1.8.0",
     "@react-three/drei": "^9.105.6",
     "@react-three/fiber": "^8.16.0",
     "@react-three/postprocessing": "^2.16.2",
